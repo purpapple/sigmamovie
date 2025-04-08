@@ -14,6 +14,7 @@
       align-items: center;
       height: 100vh;
       flex-direction: column;
+      display: none;
     }
 
     .video-container {
@@ -34,19 +35,30 @@
       margin-bottom: 20px;
     }
   </style>
+  <script>
+    window.onload = function () {
+      const access = prompt("Enter access key:");
+      if (access === "9991GGH") {
+        document.body.style.display = "flex";
+      } else {
+        document.body.innerHTML = "<h1 style='color: red;'>Access Denied</h1>";
+        document.body.style.display = "flex";
+      }
+    };
+  </script>
 </head>
 <body>
 
   <h1>fricking video yo</h1>
   
   <div class="video-container">
-   <iframe frameborder="0" 
-        width="100%" 
-        height="100%" 
-        src="https://www.dailymotion.com/embed/video/x9aj7f2" 
-        allowfullscreen 
-        allow="autoplay">
-</iframe>
+    <iframe frameborder="0" 
+            width="100%" 
+            height="100%" 
+            src="https://www.dailymotion.com/embed/video/x9aj7f2" 
+            allowfullscreen 
+            allow="autoplay">
+    </iframe>
   </div>
 
 </body>
